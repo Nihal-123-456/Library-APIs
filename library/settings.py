@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-db%d9d9(etn9z(3%v5+pj$q*ppw)_r8@g!cz_tn@7t*)x*@0n7
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://hospitalbackend-ardo.onrender.com','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://librar-apis.onrender.com','https://*.127.0.0.1']
 
 # Application definition
 
