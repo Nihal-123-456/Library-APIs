@@ -36,14 +36,12 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField(required = True)
 
 class WishlistSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False)
     
     class Meta:
         model = Wishlist
         fields = '__all__'
 
 class BorrowHistorySerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False)
     
     class Meta:
         model = BorrowHistory
