@@ -10,4 +10,4 @@ class Wishlist(models.Model):
 class BorrowHistory(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
-    borrow_date = models.DateTimeField(auto_now_add=True)
+    borrow_date = models.DateField(auto_now_add=True)
