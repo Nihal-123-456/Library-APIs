@@ -7,7 +7,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class BookSerializer(serializers.ModelSerializer):
-    image = serializers.ImageField()
+    image = serializers.ImageField(required=False)
     class Meta:
         model = Book
         fields = '__all__'
