@@ -35,5 +35,5 @@ class Review(models.Model):
     reviewer = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateField(auto_now_add=True)
     rating = models.CharField(choices=STAR_CHOICE, max_length=20)
