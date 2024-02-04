@@ -30,7 +30,7 @@ class RegistrationView(APIView):
             user = serializer.save()
             token = default_token_generator.make_token(user)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
-            confirm_link = f"https://librar-apis.onrender.com/user/active/{uid}/{token}"
+            confirm_link = f"https://nihal-123-456.github.io/Library-Rest-Framework/login.html/{uid}/{token}"
             email_subject = "Confirm Your Email"
             email_body = render_to_string('confirm_email.html', {'confirm_link' : confirm_link})
             
